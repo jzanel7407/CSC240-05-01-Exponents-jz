@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Date:        7/22/2024
  * Description: A program using user-created method
  *              for the math function Square and Cube
- * Assistance:  
+ * Assistance:  Completed in Class
  ******************************************************/
 
 namespace Exponents
