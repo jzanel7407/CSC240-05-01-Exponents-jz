@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Windows.Forms;
 
@@ -29,17 +30,29 @@ namespace Exponents
             // STORAGE
             int squaredInt;
             int cubedInt;
+
             // INPUT
+            
+            try
+            {
+                // PROCESS
+                squaredInt = (Square( Convert.ToInt32( UxInputTextBox.Text ) ));
+                cubedInt = Cube( Convert.ToInt32( UxInputTextBox.Text ) );
 
-            // PROCESS
-            squaredInt = (Square( Convert.ToInt32( UxInputTextBox.Text ) ));
-            cubedInt = Cube( Convert.ToInt32( UxInputTextBox.Text ) );
+                // OUTPUT
+                xOutputLabel.ForeColor = System.Drawing.Color.Green;
+                xOutputLabel.Font = new Font( "Arial", 12, FontStyle.Bold );
+                xOutputLabel.Text = String.Concat( UxInputTextBox.Text, " squared = ", Convert.ToString( squaredInt ), Environment.NewLine, UxInputTextBox.Text, " cubed = ", Convert.ToString( cubedInt ) );
+                xOutputLabel.Visible = true;
 
-            // OUTPUT
-            xOutputLabel.Text = String.Concat( UxInputTextBox.Text," squared = ", Convert.ToString( squaredInt ), Environment.NewLine, UxInputTextBox.Text, " cubed = ", Convert.ToString( cubedInt ) );
-            xOutputLabel.Visible = true;
+                UxGoButton.Visible = false;
+            }
 
-            UxGoButton.Visible = false;
+            catch (FormatException ex )
+            {
+                MessageBox.Show("This is not an integer. Please try again","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                UxInputTextBox.Text = " ";
+            }
         }
 
         public int Square(int num)
