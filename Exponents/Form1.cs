@@ -7,59 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-/**************************************
- * Name:
- * Date:
+/******************************************************
+ * Name:        Jennifer Zanelli
+ * Date:        7/22/2024
  * Description: A program using user-created method
  *              for the math function Square and Cube
- * Assistance:
- *************************************/
+ * Assistance:  
+ ******************************************************/
 
 namespace Exponents
 {
-    public partial class Form1 : Form
+    public partial class UxExponentsForm : Form
     {
-        public Form1()
+        public UxExponentsForm()
         {
             InitializeComponent();
         }
 
-        private void xGoButton_Click(object sender, EventArgs e)
+        private void UxGoButton_Click( object sender, EventArgs e )
         {
             // STORAGE
-
+            int squaredInt;
+            int cubedInt;
             // INPUT
 
             // PROCESS
-            /* calculate the square of the number and add it to the output - 
-             * do this with a method call that allows you to pass the number
-             * and then receive the answer */
-
-            /* calculate the cube of the number and add it to the output - 
-             * do this by creating a methd as in the squaring example above */
+            squaredInt = (Square( Convert.ToInt32( UxInputTextBox.Text ) ));
+            cubedInt = Cube( Convert.ToInt32( UxInputTextBox.Text ) );
 
             // OUTPUT
-            // set the output to visible
+            xOutputLabel.Text = String.Concat( UxInputTextBox.Text," squared = ", Convert.ToString( squaredInt ), Environment.NewLine, UxInputTextBox.Text, " cubed = ", Convert.ToString( cubedInt ) );
+            xOutputLabel.Visible = true;
 
-            // turn the Go button off
+            UxGoButton.Visible = false;
         }
 
         public int Square(int num)
         {
-            // we will create this code in class
+            return (num*num);
         }
 
         public int Cube(int num)
         {
-            // we will create this code in class
+            return (num*num*num);
         }
 
         private void xResetButton_Click(object sender, EventArgs e)
         {
-            // the input and output text should be emptied
-            // turn the output to invisible
-            // turn the Go button back on
+            UxInputTextBox.Text = " ";
+            xOutputLabel.Text = " ";
+            xOutputLabel.Visible = false;
+            UxGoButton.Visible = true;
         }
-
     }
 }
