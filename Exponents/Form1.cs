@@ -46,6 +46,7 @@ namespace Exponents
                 xOutputLabel.Visible = true;
 
                 UxGoButton.Visible = false;
+                UxResetButton.Enabled = true;
             }
 
             catch (FormatException ex )
@@ -71,6 +72,8 @@ namespace Exponents
             xOutputLabel.Text = " ";
             xOutputLabel.Visible = false;
             UxGoButton.Visible = true;
+            UxResetButton.Enabled = false;
+
         }
     }
 }

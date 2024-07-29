@@ -121,7 +121,7 @@
   <data name="UxGoButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAACICAYAAACht6raAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAlB5JREFUeF7t/Yd/lVXW94/7//y+zz2jglLTEzqCCnZFQaQKKEVABBUsKL1Ir6GE
+        cgAAEnIBXmVb4wAAlB5JREFUeF7t/Yd/lVXW94/7//y+zz2jglLTEzqCCnZFQaQKKEVABBUsKL1Ir6GE
         3ltI6JCQhBB6B9uMOsUy9rZ+n/fa1z45CQGd23Geee6b+FqeJJycc53rel9rf1bZe9/2/vvv23vvvef2
         7rvv2rVr1+zKlSt2+fJlu3Dpip27cMnOnr9gZ86dtdNnz9jJM6ftxOlTVnPqpFWdqLGqkyfspXHj7P/X
         uJH9fy2auv1Xi2b2h4zmdntmC1lz+2N2S7s9R5Yry8+w2wsy7Y7WmXZnGz22y7A7OrW0OztnWqN7s61x
@@ -759,7 +759,7 @@
   <data name="UxResetButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALEAAABDCAYAAADTc+TXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAE6tJREFUeF7tnGmUVEWWx8tWUWQHUUAEVJRdtlFUPKiAtNKAzSIooMdpoHXYtEe7
+        cgAAEnIBXmVb4wAAE6tJREFUeF7tnGmUVEWWx8tWUWQHUUAEVJRdtlFUPKiAtNKAzSIooMdpoHXYtEe7
         xwWwPT3tqDRrK4stKiqguDYuOCACQinlHKDYasn15ct8udWaWVmVH/9zb2S+rJdZL2tToF4bH34nszJf
         RNyI+MeNG0tlzt5Nm3B0wgQ4LrwQwUsukUgsR87ejRuliCWWJmePFLHE4kgRSyyPFLHE8kgRSyyPFLHE
         8kgRSyyPFLHE8uTs2bBBilhiaXL+97XXpIgllkaKWGJ5pIgllkeKWGJ5pIgllkeKWGJ5pIgllkeKWGJ5
