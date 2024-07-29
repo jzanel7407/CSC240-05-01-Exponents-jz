@@ -38,11 +38,11 @@
             // 
             // UxInputTextBox
             // 
-            this.UxInputTextBox.Location = new System.Drawing.Point(124, 57);
-            this.UxInputTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.UxInputTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UxInputTextBox.Location = new System.Drawing.Point(165, 46);
             this.UxInputTextBox.Multiline = true;
             this.UxInputTextBox.Name = "UxInputTextBox";
-            this.UxInputTextBox.Size = new System.Drawing.Size(85, 45);
+            this.UxInputTextBox.Size = new System.Drawing.Size(65, 37);
             this.UxInputTextBox.TabIndex = 0;
             this.UxInputTextBox.Text = "5";
             this.UxInputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -54,8 +54,7 @@
             this.UxInputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UxInputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UxInputLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.UxInputLabel.Location = new System.Drawing.Point(88, 9);
-            this.UxInputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UxInputLabel.Location = new System.Drawing.Point(110, 7);
             this.UxInputLabel.Name = "UxInputLabel";
             this.UxInputLabel.Size = new System.Drawing.Size(174, 27);
             this.UxInputLabel.TabIndex = 3;
@@ -65,10 +64,9 @@
             // xOutputLabel
             // 
             this.xOutputLabel.AutoSize = true;
-            this.xOutputLabel.Location = new System.Drawing.Point(638, 227);
-            this.xOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.xOutputLabel.Location = new System.Drawing.Point(284, 99);
             this.xOutputLabel.Name = "xOutputLabel";
-            this.xOutputLabel.Size = new System.Drawing.Size(0, 16);
+            this.xOutputLabel.Size = new System.Drawing.Size(0, 15);
             this.xOutputLabel.TabIndex = 4;
             this.xOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.xOutputLabel.Visible = false;
@@ -76,37 +74,36 @@
             // UxGoButton
             // 
             this.UxGoButton.Image = ((System.Drawing.Image)(resources.GetObject("UxGoButton.Image")));
-            this.UxGoButton.Location = new System.Drawing.Point(88, 122);
-            this.UxGoButton.Margin = new System.Windows.Forms.Padding(4);
+            this.UxGoButton.Location = new System.Drawing.Point(135, 99);
             this.UxGoButton.Name = "UxGoButton";
-            this.UxGoButton.Size = new System.Drawing.Size(158, 118);
+            this.UxGoButton.Size = new System.Drawing.Size(118, 96);
             this.UxGoButton.TabIndex = 6;
             this.UxGoButton.UseVisualStyleBackColor = true;
             this.UxGoButton.Click += new System.EventHandler(this.UxGoButton_Click);
             // 
             // UxResetButton
             // 
+            this.UxResetButton.Enabled = false;
             this.UxResetButton.Image = ((System.Drawing.Image)(resources.GetObject("UxResetButton.Image")));
-            this.UxResetButton.Location = new System.Drawing.Point(88, 252);
-            this.UxResetButton.Margin = new System.Windows.Forms.Padding(4);
+            this.UxResetButton.Location = new System.Drawing.Point(135, 220);
             this.UxResetButton.Name = "UxResetButton";
-            this.UxResetButton.Size = new System.Drawing.Size(158, 57);
+            this.UxResetButton.Size = new System.Drawing.Size(157, 77);
             this.UxResetButton.TabIndex = 7;
             this.UxResetButton.UseVisualStyleBackColor = true;
             this.UxResetButton.Click += new System.EventHandler(this.xResetButton_Click);
             // 
             // UxExponentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 322);
+            this.ClientSize = new System.Drawing.Size(427, 309);
             this.Controls.Add(this.UxResetButton);
             this.Controls.Add(this.UxGoButton);
             this.Controls.Add(this.xOutputLabel);
             this.Controls.Add(this.UxInputLabel);
             this.Controls.Add(this.UxInputTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UxExponentsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exponents Demo";
             this.ResumeLayout(false);
             this.PerformLayout();
